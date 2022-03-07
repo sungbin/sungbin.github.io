@@ -1,60 +1,130 @@
-# The Plain
+![Uni Jekyll Theme](/assets/img/share.jpg)
 
-> The Plain is a minimalist Jekyll theme, ideally designed for your personal blog use. This Jekyll theme provides a minimum distraction so you can focus on writing that matters to you and your readers. This theme is originally inspired from [Leonard Lamprecht's _leo_ theme](https://github.com/leo/leo.github.io).
+# Uni – A one-page Jekyll theme
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-4.0-green.svg) ![TRAVIS-CI](https://travis-ci.org/heiswayi/the-plain.svg?branch=master)
+[View Half Demo](http://brianmaierjr.com/uni/) | [View Full Demo](http://brianmaierjr.com/uni/full) | [View Card Demo](http://brianmaierjr.com/uni/card)
 
-- **Demo:** https://heiswayi.github.io/the-plain/
+## Features
 
-![SCREENSHOT](https://i.imgur.com/FITKN1H.png)
+* Minimal, One-Page Design
+* Fast and responsive
+* Flexible
+* Built using these tools:
+  * GULP
+  * SASS
+  * BROWSERSYNC
+  * AUTOPREFIXER
+* A modular, type scale
+* 3 different layouts with additional options
+* Responsive Images for performance
+* Social Meta Tags
 
-## Usage
+## Browser Support
 
-### On an unlimited Jekyll host
+This theme will look great and work in most newer browsers. If you see an issue please feel free to [contact me](mailto:brimaidesigns@gmail.com).
 
-> **NOTE** This does NOT work on GitHub, see the next section.
+---
 
-Put this in your *Gemfile*:
+## Setup
 
-	gem 'the-plain'
+1. [Install Jekyll](http://jekyllrb.com)
+2. [Install Bundler](http://bundler.io/)
+3. Run `bundle install`
+4. Install gulp dependencies by running `npm install`
+5. Run Jekyll and watch files by running `bundle exec gulp`
 
-and run `bundle install` to install the plugin.
+Please note that any changes made to the `config.yml` will require that you stop gulp and start it again.
 
-Add this to your sites *_config.yml* file:
+---
 
-	theme: the-plain
+## Site/Layout Settings
 
-Then copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+The main settings can be found inside the `_config.yml` file:
 
-### On GitHub
+* **title:** you or your company's name
+* **description:** description of your site that will be used when your site is shared or posted on social media
+* **sharing_image:** name of your image (example.jpg). This image should be placed in the `assets/img/` folder
+* **content:** a brief blurb about yourself
+* **url:** your url
+* **social** diverse social media usernames (optional)
+  * **platform**: display name for social media or external link
+  * **url**: destination for the link
+* **google_analytics** Google Analytics key (optional)
 
-GitHub - for your user account pages or repository gh-pages - only supports a limited set of themes.
+---
 
-Therefore, you need to use the 'remote\_theme:' setting instead of 'theme:', which is supported by [a 3rd party plugin](https://github.com/benbalter/jekyll-remote-theme).
+![Uni Jekyll Theme](layout--half.jpg)
 
-Put this in your *Gemfile*:
+## Half Layout
 
-	gem 'jekyll-remote-theme'
+* **half_side:** which side of the page your content is on [left or right]
 
-and run `bundle install` to install the plugin.
+---
 
-Add the following to your site's *_config.yml* to activate the plugin and to select this theme:
+![Uni Jekyll Theme](layout--full.jpg)
 
-	plugins:
-	  - jekyll-remote-theme
+## Full layout
 
-	remote_theme: heiswayi/the-plain
+* **full_text_position:** where on the page the text will appear [left, center, or right]
 
-This will grab the theme directly from the GitHub repo.
+---
 
-Now copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+![Uni Jekyll Theme](layout--card.jpg)
 
-## Authors
+## Card layout
 
-- [**Heiswayi Nrird**](https://heiswayi.nrird.com)
+The background image and other style customizations can be changed in `assets/scss/layouts/_card.scss`
 
-See also the list of [contributors](https://github.com/heiswayi/the-plain/graphs/contributors) who participated in this project.
+---
 
-## License
+## Further Customizations
 
-[MIT](LICENSE)
+### Change Layout
+
+By default, Uni is set to use the `half` layout. To change the `layout` change the front matter in `index.html`
+
+For example, the layout below is using the `full` layout. The other options available are `half` and `card`.
+
+```
+---
+layout: full
+title: Uni – A one-page Jekyll theme
+---
+```
+
+### Styling
+
+While running `bundle exec gulp` modify any of the files in the `assets/scss/` folder and your browser will update automatically. No reload required!
+
+The layouts all have their own stylesheets found in `assets/scss/layouts/`. This is where images for each of the three layouts can be found. In addition, this is where you can change text color, layout, etc.
+
+#### Primary color
+
+The primary color is used for headings, accents, and buttons. It can be changed by modifying the `assets/scss/base/_config.scss` file.
+
+### Add Content
+
+Add content in `config.yml` or alter `index.html` and change `{{ content }}` to be whatever you want.
+
+### Imagery
+
+As stated above, the images are set in the respective stylesheets found in `assets/scss/layouts/`.
+
+We are using responsive images that require three different image sizes. This allows the browser to serve the appropriate image based on the screen size. Recommended image widths are:
+
+* #### Small: 768px wide
+* #### Medium: 1200px wide
+* #### Large: 1600px wide
+
+To replace the images, modify the names in the `responsivebackground` mixin as shown below.
+*Make sure to include the file extension!*
+
+```
+@include responsivebackground("half-sm.jpg", "half-md.jpg", "half-lg.jpg");
+```
+
+When uploading images please keep file size in mind. For optimizing, we recommend using [TinyPNG](https://tinypng.com) and [TinyJPG](https://tinyjpg.com).
+
+### Favicon
+
+To add your own favicon, replace the image found at `assets/img/favicon.png`.

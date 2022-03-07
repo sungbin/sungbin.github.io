@@ -1,46 +1,34 @@
-# Site Info
-title:              "The Plain"
-description:        "A minimalist Jekyll theme"
-author_name:        "Heiswayi Nrird" # change this to your name
-logo_url:           https://avatars0.githubusercontent.com/u/13794983?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
+# Your Name or Company
+title: Uni Kravitz
 
-# Site Settings
-url:                https://heiswayi.github.io # main url
-baseurl:            /the-plain
-permalink:          /:title # Post permalink
-timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-mathjax:            true  # enables support for mathjax - set to 'false' to disable
-social_share_previews: true
+# Description of your website. This is used for social sharing.
+description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler, Uni Kravitz.
 
-# Site Build
-highlighter:        rouge
-markdown:           kramdown
-kramdown:
-    input:          GFM
-sass:
-    style:          :compressed
+# A brief blurb about yourself
+content: Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
 
-# Other Params
-include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
-plugins:
-  - jekyll-sitemap
+# Add your social links
+social:
+  - platform: github
+    url: https://github.com/brianmaierjr
+  - platform: facebook
+    url: https://facebook.com/brianmaierjr
+  - platform: twitter
+    url: https://twitter.com/brianmaierjr
+  - platform: linkedin
+    url: brianmaierjr
 
+# General settings
+# url: http://brianmaierjr.github.com/uni
+# baseurl: "/uni" 
+markdown: kramdown
+sharing_image: share.jpg
+google_analytics: "UA-58263416-1" # google analytics tracking
 
+#### LAYOUT OPTIONS #####
 
-defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "null"
-  -
-    scope:
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      type:         "posts"
-    values:
-      layout:       "post"
+# Half layout
+half_side: right
+
+# Full layout
+full_text_position: right # left, right or center
