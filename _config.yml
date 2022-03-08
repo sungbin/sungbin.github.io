@@ -6,27 +6,11 @@ description:  The beautiful website of artist, poet, craftsperson, cyclist, and 
 
 
  # A brief blurb about yourself
- content: Software Engineering, Software Test, Software Quaility. The Better Software, The Better World
+ content: >
+  Master course in Information and Communication Engineering, HGU (2022~)
+  B.S in Computer Science and Electrical Engineering, HGU (2022)
 
- # Add your social links
- social:
-   - platform: github
-     url: https://github.com/sungbin
-#   - platform: blog
-#     url: https://twitter.com/brianmaierjr
-
-
- # General settings
- # url: http://sungbin.github.io/uni
- # baseurl: "/uni" 
- markdown: kramdown
- sharing_image: share.jpg
- google_analytics: "UA-58263416-1" # google analytics tracking
-
- #### LAYOUT OPTIONS #####
-
- # Half layout
- half_side: right
-
- # Full layout
- full_text_position: right # left, right or center
+  https://sungbin.github.io/
+  313 Oseok Hall, Handong Global Univ.
+  558 Handong-ro, Buk-gu, Pohang,
+  Gyeongbuk, South Korea 37554
