@@ -14,12 +14,8 @@ content: |
 social:
   - platform: github
     url: https://github.com/sungbin
-  - platform: facebook
-    url: https://facebook.com/brianmaierjr
-  - platform: twitter
-    url: https://twitter.com/brianmaierjr
-  - platform: linkedin
-    url: brianmaierjr
+  - platform: blog
+    url: https://sungbin.github.io/blog
 
 # General settings
 # url: http://brianmaierjr.github.com/uni
