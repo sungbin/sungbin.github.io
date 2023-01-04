@@ -8,25 +8,14 @@ var before = document.createElement('div');
 before.innerHTML = '변환 전';
 document.body.appendChild(before);
 
-var Text1 = document.createElement('div');
-Text1.innerHTML = '바꿀 문자열 (JSON 형식)';
-Text1.style.width = '40%';
-Text1.style.padding = '3pt';
-Text1.style.fontSize = '10pt';
-Text1.style.fontWeight = 'bold';
-document.body.appendChild(Text1);
-
-var Text2 = document.createElement('div');
-Text2.innerHTML = '설교';
-Text2.style.width = '40%';
-Text2.style.padding = '3pt';
-Text2.style.fontSize = '10pt';
-Text2.style.fontWeight = 'bold';
-document.body.appendChild(Text2);
+var beforeText = document.createElement('div');
+beforeText.innerHTML = '바꿀 문자열 (JSON 형식) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 설교';
+beforeText.style.fontSize = '10pt';
+beforeText.style.fontWeight = 'bold';
+document.body.appendChild(beforeText);
 
 var beforeTextArea = document.createElement('textarea');
 beforeTextArea.style.width = '40%';
-beforeTextArea.style.padding = '3pt';
 beforeTextArea.style.height = '300pt';
 document.body.appendChild(beforeTextArea);
 beforeTextArea.value = `{
@@ -97,7 +86,6 @@ beforeTextArea.value = `{
 var afterTextArea = document.createElement('textarea');
 afterTextArea.style.width = '40%';
 afterTextArea.style.height = '300pt';
-afterTextArea.style.padding = '3pt';
 document.body.appendChild(afterTextArea);
 afterTextArea.value = `우리 지체들 아 본독이 정말 중요해요 알겠죠.`
 
